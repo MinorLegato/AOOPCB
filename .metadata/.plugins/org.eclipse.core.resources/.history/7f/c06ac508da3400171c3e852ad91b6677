@@ -1,0 +1,13 @@
+import javax.swing.*;
+
+public class MenuBar {
+
+	public MenuBar(){
+		JMenuBar topMenu = new JMenuBar();
+		JMenu fileMenu = new JMenu("File");
+		JMenuItem 
+		topMenu.add(fileMenu);
+	}
+	
+	
+}

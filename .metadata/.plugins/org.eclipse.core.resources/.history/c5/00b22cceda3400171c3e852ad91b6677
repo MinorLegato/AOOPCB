@@ -1,0 +1,17 @@
+import javax.swing.*;
+
+public class MenuBar extends JMenuBar{
+
+	private static final long serialVersionUID = 1L;
+
+	public MenuBar(){
+		JMenu fileMenu = new JMenu("File");
+		fileMenu.add(new JMenuItem("new"));
+		fileMenu.add(new JMenuItem("open"));
+		fileMenu.add(new JMenuItem("save"));
+		fileMenu.add(new JMenuItem("save as"));
+		this.add(fileMenu);
+	}
+	
+	
+}
