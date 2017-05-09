@@ -4,14 +4,24 @@ import java.awt.*;
 public class Grid extends JPanel {
 	private static final long serialVersionUID = 1L;
 
-	public Grid() {
-        setPreferredSize(new Dimensions(800, 600));
+	private int width;
+	private int height;
+	private int tileSize;
+
+	public Grid(int width, int height, int tileSize) {
+        setPreferredSize(new Dimension(width, height));
+        this.width = width;
+        this.height = height;
+        this.tileSize = tileSize;
     }
 
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
 
         Graphics2D g2 = (Graphics2D) g;
+
+        g2.setColor(new Color (255, 0, 0, 255));
+        g2.fillRect(0, 0, 200, 200);
     }
 
     public static void main(final String[] args) {
