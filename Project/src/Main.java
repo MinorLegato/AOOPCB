@@ -1,10 +1,14 @@
+import javax.swing.*;
 
 public class Main {
 
 	public static void main(final String[] args) {
-		Window win = new Window();
+		JFrame win = Window.createMainFrame();
 
-		System.out.println("Hello, world!");
+		while (true) {
+			win.repaint();
+		}
 	}
 
 }
+
